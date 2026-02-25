@@ -3,35 +3,26 @@ import { StyleSheet} from "react-native";
 
 
 const styles = StyleSheet.create({
-  container :{
-    backgroundColor : "#ffff",
-    alignItems : "center",
-    justifyContent :"center",
-    padding : 5 ,
-    display : "flex" ,
-
+  container: {
+    paddingVertical: 24,
+    alignItems: "center", // centers cards horizontally
   },
-  card : {
-    borderWidth : 1 ,
-    borderColor : "black",
-    borderRadius : 8 ,
-    display : "flex",
-    flexDirection :"row",
-    alignItems : "center",
-    padding : 8 ,
-    width : 325 , 
-    gap : 8 ,
-
+  card: {
+    width: "85%",          // control width
+    maxWidth: 400,         // prevents too wide on tablet
+    borderRadius: 20,      // nicer rounded square
+    marginBottom: 20,
+    elevation: 4,          // Android shadow
   },
-  avatar : {
-    width : 75,
-    height: 75 , 
-    borderRadius : 999 , 
-
+  cardContent: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingVertical: 20,   // increase height
+    paddingHorizontal: 16,
+    gap: 20,
   },
-  boldText: {
-    fontWeight : "bold",
-
+  textContainer: {
+    flex: 1,
   },
 });
 
